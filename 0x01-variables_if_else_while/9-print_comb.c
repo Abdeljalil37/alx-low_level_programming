@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char digitNbr = 0;
+	int digitNbr = 0;
 
 	while (digitNbr <= 9)
 	{
