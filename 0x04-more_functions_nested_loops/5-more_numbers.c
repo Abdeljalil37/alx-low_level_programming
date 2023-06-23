@@ -1,6 +1,9 @@
 #include "main.h"
 
-
+/**
+ * more_numbers - Prints a series of numbers
+ * with Betty style comments
+ */
 void more_numbers(void)
 {
 	int i, num;
