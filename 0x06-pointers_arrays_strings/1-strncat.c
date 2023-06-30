@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings, taking only the first n characters from src.
+ * _strncat - Concatenates two strings, taking only the first n characters
  *
  * @dest: Pointer to the destination string.
  * @src: Pointer to the source string.
@@ -17,7 +17,6 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[i] != '\0')
 		i++;
 
-	/* Appending the source string to the destination string, limited to n characters */
 	while (src[j] != '\0' && j < n)
 	{
 		dest[i] = src[j];
