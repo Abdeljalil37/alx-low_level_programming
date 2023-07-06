@@ -1,34 +1,30 @@
 #include "main.h"
-
 /**
- * factorial - detects if an input number is a prime number.
- * @n: input number.
- * @c: iterator.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
- */
-int factorial(unsigned int n, unsigned int c)
+* factor - finds the prime number of a given number
+*
+* @n: number to find the prime number of
+* @i: number to check if prime
+*
+* Return: (1) if prime number, (0) if not
+*/
+int factor(int n, int i)
 {
-	if (n % c == 0)
-	{
-		if (n == c)
-			return (1);
-		else
-			return (0);
-	}
-	return (0 + factorial(n, c + 1));
+	if (n % i == 0)
+		return (0);
+	if (i > n / 2)
+		return (1);
+	return (factor(n, i + 1));
 }
 /**
- * is_prime_number - detects if an input number is a prime number.
- * @n: input number.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
- */
+* is_prime_number - finds the prime number of a given number
+*
+* @n: number to find the prime number of
+*
+* Return: value from factor function
+*/
 int is_prime_number(int n)
 {
-	if (n == 0)
+	if (n <= 1)
 		return (0);
-	if (n < 0)
-		return (0);
-	if (n == 1)
-		return (0);
-	return (factorial(n, 2));
+	return (factor(n, 2));
 }
