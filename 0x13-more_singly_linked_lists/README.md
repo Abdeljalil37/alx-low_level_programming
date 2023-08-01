@@ -111,4 +111,3 @@ and functions written for the project.
   `listint_t` linked list using a maximum of two variables.
     * If no loop is found - returns `NULL`.
     * Otherwise - returns the address of the node where the loop starts.
-    
