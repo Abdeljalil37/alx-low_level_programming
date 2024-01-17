@@ -12,7 +12,7 @@ int jump_search(int *array, size_t size, int value)
 	int first = 0, step = 3, i;
 	int len = (int)size;
 
-	if (!array)
+	if (!array || size == 0)
 		return (-1);
 
 	for (i = first; i <= len; i = first)
